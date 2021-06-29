@@ -29,7 +29,7 @@ def poweroff():
 		os.system("sudo killall emulationstatio") #RetroPie 4.6
 		os.system("/opt/retropie/supplementary/omxiv/omxiv -b /home/pi/dos-parking.png &")
 		os.system("sudo sleep 5s")
-		os.system("sudo shutdown -r now")
+		os.system("sudo shutdown -h now")
 
 #blinks the LED to signal button being pushed
 def ledBlink():

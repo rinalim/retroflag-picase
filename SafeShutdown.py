@@ -27,7 +27,7 @@ def poweroff():
 		GPIO.wait_for_edge(powerPin, GPIO.FALLING)
 		os.system("sudo killall emulationstation")
 		os.system("sudo killall emulationstatio") #RetroPie 4.6
-		os.system("/opt/retropie/supplementary/omxiv/omxiv -b /opt/RetroFlag/dos-parking.png &")
+		os.system("/opt/retropie/supplementary/omxiv/omxiv -b -l 30002 /opt/RetroFlag/dos-parking.png &")
 		os.system("sudo sleep 5s")
 		os.system("sudo shutdown -h now")
 

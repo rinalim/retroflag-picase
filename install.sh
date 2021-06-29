@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SourcePath=https://raw.githubusercontent.com/RetroFlag/retroflag-picase/master
+SourcePath=https://raw.githubusercontent.com/rinalim/retroflag-picase/master
 
 #Check if root--------------------------------------
 if [[ $EUID -ne 0 ]]; then
@@ -35,6 +35,8 @@ fi
 sudo mkdir "/opt/RetroFlag"
 script=/opt/RetroFlag/SafeShutdown.py
 wget -O $script "$SourcePath/SafeShutdown.py"
+image=/opt/RetroFlag/dos-parking.png
+wget -O $image "$SourcePath/dos-parking.png"
 
 #Enable Python script to run on start up------------
 RC=/etc/rc.local
